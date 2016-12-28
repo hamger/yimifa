@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>一口价</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <!-- 注册登入 -->
+        <div class="top row">
+            <div class="pull-right text-center btn" onclick="login()">登入</div>
+            <div class="pull-right text-center btn">注册</div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">导航</span>
+                <span class="icon-bar" style="background-color:#000;"></span>
+                <span class="icon-bar" style="background-color:#000;"></span>
+                <span class="icon-bar" style="background-color:#000;"></span>
+            </button>
+            <img src="image/logo.png" style="margin:20px;">
+        </div>
+        <div id="navbar" class="collapse navbar-collapse" style="margin-top:12px;">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="ymf.html"><i class="fa fa-home"></i>首页</a></li>
+                <li><a href="price.html"><i class="fa fa-bars"></i>一口价</a></li>
+                <li><a href="auction.html"><i class="fa fa-legal"></i>域名拍卖</a></li>
+                <li><a href="#"><i class="fa fa-exchange"></i>交易大厅</a></li>
+                <li><a href="#"><i class="fa fa-archive"></i>成交记录</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>个人中心</a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <!-- 中间部分 -->
+    <div class="container box">
+        <img src="image/price.jpg" alt="一口价图片" style="width: 100%;margin-bottom: 12px;">
+        <!-- 路径导航 -->
+        <ol class="breadcrumb">
+            当前位置 :
+            <li><a href="Ymf2.html">首页</a></li>
+            <li class="active">淘域名</li>
+        </ol>
+        <!-- 搜索栏 -->
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">淘域名</a></li>
+            <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">四声母com</a></li>
+            <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab">四声母cn</a></li>
+            <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab">五数com(无0,4)</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="tab1">
+                <div class="row" style="margin-top:10px;">
+                    <div class="col-md-2 text-center" style="padding-top:10px;color: #EC5A0F">分类快速搜索</div>
+                    <div class="col-md-2 ">
+                        <div class="pull-left" style="padding-top:8px;">分类:&nbsp;</div>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                全部
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="pull-left" style="padding-top:8px;">后缀:&nbsp;</div>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                全部
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <div class="pull-left" style="padding-top:8px;">注册商:&nbsp;</div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                全部
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pull-left" style="margin-left: 30px;">
+                        <div class="dropdown">
+                            <div class="pull-left" style="padding-top:8px;">排序方式:&nbsp;</div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                剩余时间
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pull-left" style="margin-left: 60px;">
+                        <button type="button" class="btn btn-warning ">快速搜索</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab2">
+                <div class="row" style="margin-top:10px;">
+                    <div class="col-md-2 text-center" style="padding-top:10px;color: #EC5A0F">分类快速搜索</div>
+                    <div class="col-md-2 ">
+                        <div class="pull-left" style="padding-top:8px;">分类:&nbsp;</div>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                四声
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="pull-left" style="padding-top:8px;">后缀:&nbsp;</div>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                .com
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <div class="pull-left" style="padding-top:8px;">注册商:&nbsp;</div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                全部
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pull-left" style="margin-left: 30px;">
+                        <div class="dropdown">
+                            <div class="pull-left" style="padding-top:8px;">排序方式:&nbsp;</div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                剩余时间
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pull-left" style="margin-left: 60px;">
+                        <button type="button" class="btn btn-warning ">快速搜索</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab3">
+                <div class="row" style="margin-top:10px;">
+                    <div class="col-md-2 text-center" style="padding-top:10px;color: #EC5A0F">分类快速搜索</div>
+                    <div class="col-md-2 ">
+                        <div class="pull-left" style="padding-top:8px;">分类:&nbsp;</div>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                四声
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="pull-left" style="padding-top:8px;">后缀:&nbsp;</div>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                .cn
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <div class="pull-left" style="padding-top:8px;">注册商:&nbsp;</div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                全部
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pull-left" style="margin-left: 30px;">
+                        <div class="dropdown">
+                            <div class="pull-left" style="padding-top:8px;">排序方式:&nbsp;</div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                剩余时间
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pull-left" style="margin-left: 60px;">
+                        <button type="button" class="btn btn-warning ">快速搜索</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab4">
+                <div class="row" style="margin-top:10px;">
+                    <div class="col-md-2 text-center" style="padding-top:10px;color: #EC5A0F">分类快速搜索</div>
+                    <div class="col-md-2 ">
+                        <div class="pull-left" style="padding-top:8px;">分类:&nbsp;</div>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                五数
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="pull-left" style="padding-top:8px;">后缀:&nbsp;</div>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                .com
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <div class="pull-left" style="padding-top:8px;">注册商:&nbsp;</div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                全部
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pull-left" style="margin-left: 30px;">
+                        <div class="dropdown">
+                            <div class="pull-left" style="padding-top:8px;">排序方式:&nbsp;</div>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                剩余时间
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pull-left" style="margin-left: 60px;">
+                        <button type="button" class="btn btn-warning ">快速搜索</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 列表 -->
+        <div style="margin:10px 0">
+            <div style="margin:10px 0">
+                <h4 style="display: inline;">一口价</h4>(<span style="color: red">6348462</span>)
+            </div>
+            <div class="table" style="border: 1px solid #EBEBEB;border-radius: 4px">
+                <table class="table table-hover table-striped">
+                    <tr>
+                        <th>
+                            <input type="checkbox">
+                        </th>
+                        <th>域名</th>
+                        <th>简介</th>
+                        <th>注册商</th>
+                        <th>交易类型</th>
+                        <th>当前价格</th>
+                        <th>剩余时间</th>
+                        <th>距到期</th>
+                        <th>更多</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>zufu.com</td>
+                        <td>龙看影视</td>
+                        <td>易名</td>
+                        <td>一口价</td>
+                        <td>2000元</td>
+                        <td>交易已结束</td>
+                        <td>211天</td>
+                        <td>
+                            <button type="button" style="border:1px solid #EC5A0F;color: #EC5A0F;background-color: #fff;border-radius: 3px;">关注</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>zufu.com</td>
+                        <td>龙看影视</td>
+                        <td>易名</td>
+                        <td>一口价</td>
+                        <td>2000元</td>
+                        <td>交易已结束</td>
+                        <td>211天</td>
+                        <td>
+                            <button type="button" style="border:1px solid #EC5A0F;color: #EC5A0F;background-color: #fff;border-radius: 3px;">关注</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>zufu.com</td>
+                        <td>龙看影视</td>
+                        <td>易名</td>
+                        <td>一口价</td>
+                        <td>2000元</td>
+                        <td>交易已结束</td>
+                        <td>211天</td>
+                        <td>
+                            <button type="button" style="border:1px solid #EC5A0F;color: #EC5A0F;background-color: #fff;border-radius: 3px;">关注</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>zufu.com</td>
+                        <td>龙看影视</td>
+                        <td>易名</td>
+                        <td>一口价</td>
+                        <td>2000元</td>
+                        <td>交易已结束</td>
+                        <td>211天</td>
+                        <td>
+                            <button type="button" style="border:1px solid #EC5A0F;color: #EC5A0F;background-color: #fff;border-radius: 3px;">关注</button>
+                        </td>
+                </table>
+                <a class="more text-center" style="display: block;padding-bottom: 14px;"> 
+                更多一口价搜索结果 <i class="fa fa-chevron-circle-down"></i>
+            </a>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <!-- 版权所有 -->
+        <p> Copyright @ 2008-2016 杭州巨盘科技有限公司 版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙ICP备10012651号-2</p>
+    </footer>
+    <script src="script/jquery-2.1.4.min.js "></script>
+    <script src="script/bootstrap.min.js "></script>
+    <script src="script/index.js "></script>
+</body>
+
+</html>
