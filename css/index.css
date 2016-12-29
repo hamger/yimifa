@@ -39,7 +39,19 @@ section {
 	margin: 0 auto;
 }
 
-.hide,{
+.hide{
 	display: none;
 }
 
+.sheet{
+    width: 95%;
+    margin:0 auto;
+    padding: 1%;
+    border: 1px solid #D4D4D4;
+    border-radius: 6px;
+}
+
+.domain,.meaning,.price,.end_datetime {
+    display: block;
+    padding: 5px; 
+}
