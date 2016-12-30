@@ -44,8 +44,8 @@ section {
 }
 
 .sheet{
-    width: 95%;
-    margin:0 auto;
+    width: 100%;
+    margin:15px auto;
     padding: 1%;
     border: 1px solid #D4D4D4;
     border-radius: 6px;
